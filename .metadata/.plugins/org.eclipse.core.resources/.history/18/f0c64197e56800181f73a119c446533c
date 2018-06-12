@@ -1,0 +1,15 @@
+
+public class Car extends Vehicle {
+	public static void main(String[] args)
+	{
+		Car myCar = new Car();
+		myCar.move();
+		
+	}
+	
+	public void drive()
+	{
+		System.out.println("The Car has moved 5 feet");
+	}
+
+}

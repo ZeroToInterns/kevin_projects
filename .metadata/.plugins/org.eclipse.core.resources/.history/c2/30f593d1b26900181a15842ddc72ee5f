@@ -1,0 +1,25 @@
+
+public class Circle {
+	
+	private static double radius;
+	
+	public Circle(double radius)
+	{
+		this.radius = radius;
+	}
+	
+	public double computeArea(double radius)
+	{
+		double area = Math.PI * (radius*radius);
+		return area;
+	}
+	
+	public static void main(String[] args)
+	{
+		Circle myCircle = new Circle(10);
+		System.out.println(Math.PI * (radius*radius));
+		System.out.println(myCircle.computeArea());
+		
+	}
+
+}

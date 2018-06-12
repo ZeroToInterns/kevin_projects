@@ -1,0 +1,64 @@
+
+public class Tester {
+
+public static void chooseRoom (String newAnimal, boolean sick)
+{
+	if(sick)
+	{
+		System.out.println("We cannot accept this animal");
+}
+else
+{
+ if((newAnimal.equals("dog") || newAnimal.equals("Dog")))
+{
+	
+		System.out.println("Goes in dog Room");
+	
+}
+else if(newAnimal.equals("cat") || newAnimal.equals("Cat"))
+{
+	
+		System.out.println("Goes in cat Room");
+	
+}
+else if(newAnimal.equals("zebra") || newAnimal.equals("Zebra"))
+{
+		System.out.println("Goes in zebra Room");
+	
+}
+else 
+{
+	
+		System.out.println("Goes in other Room");	
+}
+}
+}
+
+
+public static void main(String[] args) {
+	
+//		double temperature = 77.5;
+//		if(120 >= temperature && temperature >= 77.5)
+//		{
+//			System.out.println("It's Hot");
+//		}
+//		else if (77.5 > temperature && temperature >= 15)
+//		{
+//			System.out.println("It's warm");
+//		}
+//		else if(15 > temperature && temperature >= -30)
+//		{
+//			System.out.println("It's Cold");
+//		}
+//		else
+//		{
+//			System.out.println("It's a recorder breaker");
+//		}
+//
+//	}
+chooseRoom("Dog",false);
+chooseRoom("Cat",true);
+chooseRoom("Zebra",false);
+chooseRoom("Fish",true);
+}
+	}

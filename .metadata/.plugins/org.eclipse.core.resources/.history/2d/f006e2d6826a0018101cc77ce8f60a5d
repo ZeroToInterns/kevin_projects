@@ -1,0 +1,88 @@
+
+public class Tester {
+	
+private static void determineGender(char gender)
+{
+	if(gender == 'M')
+	{
+		System.out.print("It's a Male ");
+	}
+	else if(gender == 'F'){
+	{
+		System.out.print("It's a Female");
+	}
+	else
+	{
+		System.out.print("Error: Invalid ");
+	}
+	}
+}
+
+public static void chooseRoom (String newAnimal, boolean sick, char gender)
+{
+	if(sick)
+	{
+		System.out.println("We cannot accept this animal");
+}
+else
+{
+ if((newAnimal.equals("dog") || newAnimal.equals("Dog")))
+{	
+		System.out.println(determineGender('M') + "dog");
+}
+ else if ((newAnimal.equals("dog") || newAnimal.equals("Dog")) && sex == 'f')
+ {
+	 System.out.println("It is a female dog");
+ }
+else if((newAnimal.equals("Cat") || newAnimal.equals("cat")) && sex == 'M')
+{	
+		System.out.println("It is a male cat");	
+}
+else if((newAnimal.equals("Cat") || newAnimal.equals("cat")) && sex == 'F')
+{
+		System.out.println("It is a female Cat");
+}
+else if((newAnimal.equals("Zebra") || newAnimal.equals("zebra")) && sex == 'M')
+{
+		System.out.println("It is a male zebra");	
+}
+else if((newAnimal.equals("Zebra") || newAnimal.equals("zebra")) && sex == 'F')
+{
+	System.out.println("It is a female zebra");
+}
+else 
+{
+	
+		System.out.println("We don't accept thsi animal");	
+}
+}
+}
+
+
+public static void main(String[] args) {
+	
+//		double temperature = 77.5;
+//		if(120 >= temperature && temperature >= 77.5)
+//		{
+//			System.out.println("It's Hot");
+//		}
+//		else if (77.5 > temperature && temperature >= 15)
+//		{
+//			System.out.println("It's warm");
+//		}
+//		else if(15 > temperature && temperature >= -30)
+//		{
+//			System.out.println("It's Cold");
+//		}
+//		else
+//		{
+//			System.out.println("It's a recorder breaker");
+//		}
+//
+//	}
+chooseRoom("Dog",false,'M');
+chooseRoom("Cat",true,'F');
+chooseRoom("Zebra",false,'M');
+chooseRoom("Fish",true,'M');
+}
+	}

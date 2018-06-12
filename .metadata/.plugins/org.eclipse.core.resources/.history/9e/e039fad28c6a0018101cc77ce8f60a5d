@@ -1,0 +1,60 @@
+public class ElectronicStore 
+{
+	
+	
+//	public static void getPrice(String product)
+//	{
+//		Double price;
+//		if(product.equals("Ipad"))
+//		{
+//			price = 900.0;
+//		}
+//		else if(product.equals("MacBook"))
+//		{
+//			price = 1200.0;
+//		}
+//		else if(product.equals("TV"))
+//		{
+//			price = 800.0;
+//		}
+//		else if(product.equals("Phone"))
+//		{
+//			price = 500.0;
+//		}
+//		else
+//		{
+//			price = 300.0;
+//		}
+//		System.out.println(price);
+	public static double getPrice(String product)
+	{
+		
+		if(product.equals("MacBook"))
+		{
+			return 1000.99;
+		}
+		else if(product.equals("IPhone"))
+		{
+			return  899.9;
+		}
+		else if(product.equals("Charger"))
+		{
+			return  19.99;
+		}
+		else if(product.equals("IPad"))
+		{
+			return  699.99;
+		}
+		else if(product.equals("TV"))
+		{
+			return  2000.99;
+		}
+		else 
+		{
+			return  0;
+		}
+		
+		}
+		
+	}
+

@@ -1,0 +1,11 @@
+
+public class ControlFlowTester {
+
+	public static void main(String[] args) 
+	{
+		ControlFlowPractice test1 = new ControlFlowPractice();
+		test1.findLetterAt(0,"Hello World");
+
+	}
+
+}

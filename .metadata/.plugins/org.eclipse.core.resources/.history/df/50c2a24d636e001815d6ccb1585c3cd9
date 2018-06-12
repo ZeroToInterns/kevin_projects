@@ -1,0 +1,12 @@
+
+public class ControlFlowTester {
+
+	public static void main(String[] args) 
+	{
+		ControlFlowPractice test1 = new ControlFlowPractice();
+//		test1.findLetter("o","Hello World");
+		System.out.println(test1.calculateCost(60));
+
+	}
+
+}

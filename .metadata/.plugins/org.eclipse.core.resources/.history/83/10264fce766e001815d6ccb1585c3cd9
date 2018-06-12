@@ -1,0 +1,17 @@
+import org.unit.Test;
+public class ControlFlowTester {
+
+//	public static void main(String[] args) 
+//	{
+//		ControlFlowPractice test1 = new ControlFlowPractice();
+//		System.out.println(test1.findLetter("H","Hello World"));
+////		System.out.println(test1.calculateCost(60));
+
+		@Test
+		public void testCalculateCost() 
+		{
+			ControlFlowPractice test1 = new ControlFlowPractice();
+			System.out.println(test1.calculateCost(100));
+		}
+
+}

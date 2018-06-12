@@ -1,0 +1,51 @@
+
+public class Tester {
+
+public static void chooseRoom (String newAnimal)
+{
+	if(newAnimal.equalsIgnoreCase("dog"))
+	{
+		System.out.println("Goes in dog Room");
+	}
+	else if(newAnimal.equalsIgnoreCase("cat"))
+	{
+		System.out.println("Goes in cat Room");
+	}
+	else if(newAnimal.equalsIgnoreCase("zebra"))
+	{
+		System.out.println("Goes in Zebra Room");
+	}
+	else 
+	{
+		System.out.println("Goes in other Room");
+	}
+	}
+	
+	
+	public static void main(String[] args) {
+		
+//		double temperature = 77.5;
+//		if(120 >= temperature && temperature >= 77.5)
+//		{
+//			System.out.println("It's Hot");
+//		}
+//		else if (77.5 > temperature && temperature >= 15)
+//		{
+//			System.out.println("It's warm");
+//		}
+//		else if(15 > temperature && temperature >= -30)
+//		{
+//			System.out.println("It's Cold");
+//		}
+//		else
+//		{
+//			System.out.println("It's a recorder breaker");
+//		}
+//
+//	}
+chooseRoom("Dog");
+chooseRoom("Cat");
+chooseRoom("Zebra");
+chooseRoom("Fish");
+}
+	}

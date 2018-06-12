@@ -1,0 +1,26 @@
+
+public class Tester {
+
+	public static void main(String[] args) {
+		
+		double temperature = 77.5;
+		if(120 >= temperature && temperature >= 77.5)
+		{
+			System.out.println("It's Hot");
+		}
+		else if (77.5 > temperature && temperature >= 15)
+		{
+			System.out.println("It's warm");
+		}
+		else if(15 > temperature && temperature >= -30)
+		{
+			System.out.println("It's Cold");
+		}
+		else
+		{
+			System.out.println("It's a recorder breaker");
+		}
+
+	}
+
+}

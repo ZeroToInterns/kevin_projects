@@ -1,0 +1,23 @@
+
+public class Person 
+{
+	//instance variables
+	private static String name = "Kevin";
+	private static int age = 19;
+	private static String hairColor = "Black";
+	private static double weight = 145;
+	private static String height = "5'4";
+	private static char gender = 'M';
+			
+	public static void main(String[] args)
+	{
+		Person newPerson = new Person();
+		System.out.println(Person.name);
+		System.out.println(Person.age);
+		System.out.println(Person.hairColor);
+		System.out.println(Person.weight);
+		System.out.println(Person.height);
+		System.out.println(Person.gender);			
+	}
+
+}
