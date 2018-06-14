@@ -20,18 +20,18 @@ public class LoopFun
 	
 	public String removeDuplicates(String word)
 	{
-		String newWord = "";
-		if(word.equals(""))
+		String newWord = ""; //Creates an empty String to add in letter
+		if(word.equals("")) 
 		{
-			throw new NullPointerException();
+			throw new NullPointerException(); //Throws in an exception if the String is empty
 		}
 		
-		for(int i = 0; i < word.length(); i++)
+		for(int i = 0; i < word.length(); i++) //Goes through the word
 		{
-			String currentLetter = word.substring(i,i+1);			
-			if(!(newWord.contains(currentLetter)))
+			String currentLetter = word.substring(i,i+1);// Checks the current position
+			if(!(newWord.contains(currentLetter))) //checks to see if letter is currently in newWord string
 			{
-					newWord += word.substring(i,i+1);
+					newWord += word.substring(i,i+1); //if not add in the letter
 			}	
 		}
 		return newWord;
@@ -71,19 +71,20 @@ public class LoopFun
         return product;
     }
 	
+	//Find the greatest power by 2 that doesn't exceed or equal the inputted value
 	public int largestPowerLessThan(int value)
 	{
-		int x = 1;
-		if(value == 1 || value <= 0)
+		int x = 1; //Sets initial count to 1
+		if(value == 1 || value <= 0) //Makes sure that the power cannot be 0 or negative
 		{
 			return -1;
 		}
-		while((int)Math.pow(2, x) < value)
+		while((int)Math.pow(2, x) < value) //Makes sure that the power does not exceed the value
 		{
 			x = x + 1;
 		}
 		
-		return x - 1;
+		return x - 1; //returns the power
 	}
 	
 //	public int largestPowerLessThan(int value)
@@ -102,30 +103,30 @@ public class LoopFun
 //	}
 //	
 	
-	public int sumOdd(int value)
+	public int sumOdd(int value) //Calculates the sum of each odd value for a number
 	{	
-		int sum = 0;
-		if(value < 0)
+		int sum = 0; 
+		if(value < 0) //Makes sure that the value is a valid number
 		{
 			System.out.println("Enter a valid number");
 		}
-		for(int i = 1; i < value; i+=2)
+		for(int i = 1; i < value; i+=2) //Increments the value by 2 to get odd numbers
 		{
-			sum = sum + i;
+			sum = sum + i; //Finds the sum of the odd number
 		}
 		return sum;
 	}
 	
-	public int getECount(String word)
+	public int getECount(String word) //Gets the number of letter e in a string
 	{
 		int ecount = 0;
-		for(int i = 0; i < word.length(); i++)
+		for(int i = 0; i < word.length(); i++) //Goes through the string
 		{
-			if(word.substring(i,i+1).equalsIgnoreCase("e"))
+			if(word.substring(i,i+1).equalsIgnoreCase("e")) //Checks the current position of the string to see if it is a string
 			{
-				ecount++;
+				ecount++; //increment the count of e
 			}
 	    }
-		return ecount;
+		return ecount; //gets the count of e
 	}
 }

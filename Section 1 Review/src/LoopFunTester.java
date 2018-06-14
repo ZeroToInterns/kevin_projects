@@ -13,7 +13,9 @@ public class LoopFunTester {
 
 //		System.out.println(x1.sumOdd(6));
 //		System.out.println(x1.getECount("SeepEEED"));
+		Bob.setYearsOnJob(1);
 		System.out.println(Bob.qualifies());
+		
 	}
 
 }
