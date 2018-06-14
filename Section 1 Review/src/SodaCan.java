@@ -3,7 +3,7 @@
  * 
  * @author Kathleen O'Brien
  */
-public class SodaCan
+public class SodaCan implements Comparable<SodaCan>
 {
     public static final double DEFAULT_RADIUS = 1.2109;
     public static final double DEFAULT_HEIGHT = 4.704;
@@ -48,12 +48,37 @@ public class SodaCan
     //Decreases the volume of the current volume of fluid in the soda can
     public void drink(double fluidOunces)
     {
-    	volume = volume - fluidOunces;
+    	if(this.volume < fluidOunces)
+    	{
+    		System.out.println("Not enough liquid");
+    	}
+    	else
+    	{
+    		volume = volume - fluidOunces;
+    	}
     }
     
     //Gets the volume of the fluid left in the soda can
     public double getContents()
     {
     	return volume;
+    }
+    
+    @Override
+    public int compareTo(SodaCan otherSoda)
+    {
+    	if(volume > otherSoda.volume)
+    	{
+    		return 1;
+    	}
+    	else if (volume < otherSoda.volume)
+    	{
+    		return -1;
+    	}
+    	else
+    	{
+    		return 0;
+    	}
+	
     }
 }

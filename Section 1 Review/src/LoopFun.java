@@ -9,8 +9,8 @@ public class LoopFun
 		}
 		else
 		{   
-			int factorial = 0; //set initial value to 0;
-			for(int i = 0; i < n; i++)
+			int factorial = 1; //set initial value to 1;
+			for(int i = 1; i <= n; i++)
 			{
 				factorial = factorial * i; //Calculates factorial
 			}

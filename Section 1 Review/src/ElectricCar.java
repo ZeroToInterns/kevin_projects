@@ -38,7 +38,14 @@ public class ElectricCar
      */
     public void drive(int miles)
     {
-    	currentRange = currentRange - miles;
+    	if(miles > currentRange)
+    	{
+    		System.out.println("Not enough gas");
+    	}
+    	else
+    	{
+    		currentRange = currentRange - miles;
+    	}
     	if(currentRange < 0)
     	{
     		currentRange = 0;

@@ -7,6 +7,7 @@ public class InputApplication
 		Scanner in = new Scanner(System.in); //Creates a scanner object
 		System.out.print("Enter a your favorite dessert: "); 
 		String answer = in.nextLine(); //Takes in a String input
+		
 		System.out.println(answer.substring(answer.length()-1)); //Prints the last character
 		System.out.print("Enter a double: "); //Takes in a Double input
 		double answer2 = in.nextDouble();

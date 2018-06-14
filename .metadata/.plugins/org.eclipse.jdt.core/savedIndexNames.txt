@@ -1,7 +1,6 @@
 INDEX VERSION 1.130+C:\Users\Kevin Chu\Documents\JavaWorksSpace\.metadata\.plugins\org.eclipse.jdt.core
 2043626465.index
 1204375214.index
-1577166837.index
 710797068.index
 3363692690.index
 2088728460.index
@@ -12,7 +11,6 @@ INDEX VERSION 1.130+C:\Users\Kevin Chu\Documents\JavaWorksSpace\.metadata\.plugi
 916900781.index
 3609888128.index
 2126943056.index
-1130931735.index
 2569137926.index
 3273689814.index
 2396396103.index
