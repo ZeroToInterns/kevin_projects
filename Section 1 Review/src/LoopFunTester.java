@@ -37,5 +37,14 @@ public class LoopFunTester
 		assertEquals(obj.getPermutationCount(10), 3628800);
 		assertEquals(obj.getPermutationCount(1), 1);
 	}
+	
+	@Test
+	public void testRemoveDuplicates()
+	{
+		assertEquals(obj.removeDuplicates("seeped"),"sepd");
+		assertEquals(obj.removeDuplicates("aabac"),"abc");
+		assertEquals(obj.removeDuplicates("abc"),"abc");
+		assertEquals(obj.removeDuplicates(""),Exception.LoopFun);
+	}
 
 }
