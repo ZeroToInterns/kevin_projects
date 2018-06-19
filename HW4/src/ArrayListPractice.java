@@ -14,13 +14,19 @@ public class ArrayListPractice
 		colorlists.add("White");
 		colorlists.add("Black");
 		colorlists.add("Gray");
+		
 		insertFirst(colorlists, "Rainbow");
 		System.out.println(colorlists);
+		
 		addSecondToLast(colorlists, "Majenta");
 		System.out.println(colorlists);
+		
+		colorlists.add("Purple");
 		numOfElements(colorlists, "Purple");
+		
 		replace(colorlists, "Purple", "Pink");
 		System.out.println(colorlists);
+		
 		
 	}
 	
@@ -37,7 +43,7 @@ public class ArrayListPractice
 	public static void numOfElements(ArrayList<String> list, String color)
 	{
 		int count = 0;
-		for(int i = 0; i < list.size() - 1; i++)
+		for(int i = 0; i < list.size(); i++)
 		{
 			if(list.get(i).equalsIgnoreCase(color))
 			{
@@ -48,7 +54,7 @@ public class ArrayListPractice
 	}	
 	public static void replace(ArrayList<String> list, String color, String replacecolor)
 	{
-		for(int i = 0; i < list.size() - 1; i++)
+		for(int i = 0; i < list.size(); i++)
 		{
 			if(list.get(i).equals(color))
 			{
