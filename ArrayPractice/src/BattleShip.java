@@ -30,21 +30,42 @@ public class BattleShip
 	//places a 3 unit long boat on the grid starting form x and y
 	public void placeCarrierBoat(int x, int y, String orientation)
 	{
-		board[x][y] = true;
-		if(orientation.equalsIgnoreCase("Horizontal"))
+		try
 		{
-			for(int i = 0; i < 3; i++)
+			if(orientation.equalsIgnoreCase("Horizontal"))
 			{
-				board[y + i][x] = true;
+				for(int i = 0; i < 3; i++)
+				{
+					board[y + i][x] = true;
+				}
+			}
+			else if(orientation.equalsIgnoreCase("Vertical"))
+			{
+				for(int i = 0; i < 3; i++)
+				{
+					board[y][x+i] = true;
+				}
+			}
+			else
+			{
+				System.out.println("Please put in a valid oorientaiton!");
 			}
 		}
-		else if(orientation.equalsIgnoreCase("Vertical"))
+		catch(IndexOutOfBoundsException e)
 		{
-			for(int i = 0; i < 3; i++)
-			{
-				board[y][x+i] = true;
-			}
+			System.out.println("Cannot place boat at that spot");
 		}
-		
+	}
+	
+	public void attack(int x, int y)
+	{
+		if(board[y][x])
+		{
+			System.out.println("Hit!");
+		}
+		else 
+		{
+			System.out.println("Missed!");
+		}	
 	}
 }
