@@ -70,7 +70,7 @@ class LinkedList {
     }
  
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList2 list = new LinkedList2();
  
         /* Let us create a sorted linked list to test the functions
          Created linked list will be 10->8->4->2 */
